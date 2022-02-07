@@ -206,6 +206,7 @@ export default function App() {
               </div>
               <textarea
                 id="wavemsg-type"
+                style={styles.textAreaStyles}
                 rows="5"
                 value={waveMessage}
                 onChange={(e) => { setWaveMessage(e.target.value) }}
@@ -260,5 +261,8 @@ const styles = {
   messageBlock: {    
     textAlign: "center",
     marginTop: "30px"
-  }
+  },
+  textAreaStyles: {
+    borderRadius: "0.5em",
+  },
 }
